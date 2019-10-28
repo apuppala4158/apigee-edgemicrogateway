@@ -22,6 +22,14 @@ edgemicro:
   plugins:
     sequence:
       - oauth
+targets:      
+  - host: 'aacloud.qa.esoa.qcorpaa.aa.com'    
+    ssl:
+      client:
+        key: aacloud.qa.esoa.qcorpaa.aa.com-privkey.pem
+        cert: aacloud.qa.esoa.qcorpaa.aa.com.crt
+        passphrase: Es0ap@ssword
+        rejectUnauthorized: true
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
