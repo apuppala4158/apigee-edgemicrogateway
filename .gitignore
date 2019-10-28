@@ -40,7 +40,7 @@ config/cache-config.yaml
 tests/cache-config.yaml
 tmp-*
 default.yaml.bak
-*-*-*config.yaml
+#*-*-*config.yaml
 test-token.txt
 env.sh
 foo
