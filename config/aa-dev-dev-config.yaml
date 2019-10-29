@@ -22,14 +22,13 @@ edgemicro:
   plugins:
     sequence:
       - oauth
-targets:      
-  - host: 'aacloud.qa.esoa.qcorpaa.aa.com'    
-    ssl:
-      client:
-        key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
-        cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
-        passphrase: Es0ap@ssword
-        rejectUnauthorized: true
+targets:        
+  ssl:
+    client:
+      key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
+      cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
+      passphrase: Es0ap@ssword
+      rejectUnauthorized: true
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
