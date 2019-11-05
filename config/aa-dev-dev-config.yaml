@@ -39,7 +39,8 @@ analytics:
   bufferSize: 10000
   batchSize: 500
   flushInterval: 5000
-targets:        
+targets:
+  - host: 'aa-oh-dev-appservice-ccs-s.azurewebsites.net'
     ssl:
       client:
         key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
