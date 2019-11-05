@@ -13,7 +13,7 @@ edge_config:
 edgemicro:
   port: 8000
   max_connections: 1000
-  config_change_poll_interval: 300
+  config_change_poll_interval: 200
   logging:
     level: error
     dir: /var/tmp
