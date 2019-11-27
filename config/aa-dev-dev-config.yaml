@@ -22,6 +22,11 @@ edgemicro:
   plugins:
     sequence:
       - oauth
+  ssl:  
+    cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
+    key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
+    passphrase: Es0ap@ssword
+    rejectUnauthorized: true
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
@@ -39,10 +44,3 @@ analytics:
   bufferSize: 10000
   batchSize: 500
   flushInterval: 5000
-targets: 
-  ssl: 
-    client: 
-      cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
-      key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
-      passphrase: Es0ap@ssword
-      rejectUnauthorized: true
