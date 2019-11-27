@@ -22,6 +22,13 @@ edgemicro:
   plugins:
     sequence:
       - oauth
+targets: 
+  ssl: 
+    client: 
+      cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
+      key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
+      passphrase: Es0ap@ssword
+      rejectUnauthorized: true
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
