@@ -33,12 +33,6 @@ oauth:
   allowInvalidAuthorization: false
   gracePeriod: 10
   verify_api_key_url: 'https://api.dev.aa.com/edgemicro-auth/verifyApiKey'
-analytics:
-  uri: >-
-    https://edgemicroservices.apigee.net/edgemicro/axpublisher/organization/aa-dev/environment/dev
-  bufferSize: 10000
-  batchSize: 500
-  flushInterval: 5000
 targets:
   ssl:
     client:
@@ -46,3 +40,9 @@ targets:
       cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
       passphrase: Es0ap@ssword
       rejectUnauthorized: true
+analytics:
+  uri: >-
+    https://edgemicroservices.apigee.net/edgemicro/axpublisher/organization/aa-dev/environment/dev
+  bufferSize: 10000
+  batchSize: 500
+  flushInterval: 5000
