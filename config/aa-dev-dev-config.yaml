@@ -22,6 +22,13 @@ edgemicro:
   plugins:
     sequence:
       - oauth
+  targets:
+  ssl:
+    client:
+      key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
+      cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
+      passphrase: Es0ap@ssword
+      rejectUnauthorized: true
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
@@ -39,11 +46,3 @@ analytics:
   bufferSize: 10000
   batchSize: 500
   flushInterval: 5000
-targets:
-  - host: 'aa-oh-dev-crewdataservice-p.azurewebsites.net'
-    ssl:
-      client:
-        key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
-        cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
-        passphrase: Es0ap@ssword
-        rejectUnauthorized: true
