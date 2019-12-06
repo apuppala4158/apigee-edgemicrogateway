@@ -21,6 +21,7 @@ edgemicro:
     rotate_interval: 24
   plugins:
     sequence:
+      - healthcheck
       - oauth
 headers:
   x-forwarded-for: true
