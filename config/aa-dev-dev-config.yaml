@@ -11,7 +11,7 @@ edge_config:
   keySecretMessage: The following credentials are required to start edge micro
   products: 'https://api.dev.aa.com/edgemicro-auth/products'
 edgemicro:
-  port: 443
+  port: 8000
   max_connections: 1000
   config_change_poll_interval: 300
   logging:
@@ -23,13 +23,6 @@ edgemicro:
     sequence:
       - healthcheck
       - oauth
-  ssl:
-    key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
-    cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
-    passphrase: Es0ap@ssword
-    rejectUnauthorized: true
-    requestCert: true
-    ca: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
@@ -47,3 +40,11 @@ analytics:
   bufferSize: 10000
   batchSize: 500
   flushInterval: 5000
+targets:
+  - host:
+    ssl:
+      client:
+        key: /home/site/wwwroot/config/Z1059942-eSOA-Stage_key.pem
+        cert: /home/site/wwwroot/config/Z1059942-eSOA-Stage_cert.pem
+        passphrase: Es0ap@ssword
+        rejectUnauthorized: true
