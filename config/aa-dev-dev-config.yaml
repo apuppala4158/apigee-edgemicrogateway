@@ -29,7 +29,7 @@ edgemicro:
     passphrase: Es0ap@ssword
     rejectUnauthorized: true
     rejectUnauthorized: false
-	  requestCert: false
+    requestCert: false
 headers:
   x-forwarded-for: true
   x-forwarded-host: true
